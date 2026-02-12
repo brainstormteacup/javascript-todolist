@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
+<!-- This is the head, which holds the title of the site, and links the stylesheet which is how the css can see it. -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>To-Do List App - Testing Number 1</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <!-- The container holds the entire todo list, the title, the buttons, the lists and the icon as well.-->
 <div class="container">
     <div class="todo-app">
         <h2>
+            <!-- This is the header obviously... but why did we do an h2 when that's not accesible?-->
             To-Do List <img src="images/icon.png" alt="title icon">
         </h2>
+        <!-- I know that divs are a go to since they are simple, but I want to see if I can use another html selector.. maybe span at least.-->
         <div class="row">
+            <!-- Thank goodness for input! I've not used this before, so I'm curious about it.-->
             <input type="text" id="input-box" placeholder="Add your text">
             <button onclick="addTask()">Add</button>
         </div>
@@ -19,6 +24,7 @@
         </ul>
     </div>
 </div>
+<!-- Is there an more elegant way to get to the js referenced in here?-->
 <script src="js/script.js"></script>
 </body>
 
